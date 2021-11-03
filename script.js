@@ -301,9 +301,8 @@ let randomQuestion = data => {
 };
 
 function displayQuestion() {
-	console.log(randomQuestion(data));
 	const question = randomQuestion(data);
-	definition.textContent = question.Definition;
+	definition.textContent = question.Word;
 	hint.textContent = question.Hint;
 }
 
@@ -311,7 +310,7 @@ displayQuestion();
 
 function checkAnswer(currentQuestion, guess) {
 	const answer =
-		currentQuestion.Word.toLowerCase() === guess.toLowerCase()
+		currentQuestion.Definition.toLowerCase() === guess.toLowerCase()
 			? "TRUE"
 			: "FALSE";
 	result.textContent = answer;
