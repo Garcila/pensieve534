@@ -269,13 +269,13 @@ const data = [
 	},
 	{
 		Word: "Choose one of the 5 main organ systems and explain how it works",
-		Definition: "all in the comment",
+		Definition:
+			"It all starts with the raw food you put in your mouth.  Once you put it in your mouth the salivary glands produce saliva and you chew it to help become a bolus and it goes to your esophagus.  The esophagus starts contractions to push the bolus down to the stomach.  Once in the stomach, it starts pounding the bolus in the stomach and add acids to dissolve it ito a chyme.  From the stomach it goes into the small intestine.  The pancreas, liver and gallbladder add more acids to help it dissolve and then it starts getting absorbed. Then in the large intestine finishes processing the food and produces the stool that goes out to the rectum.",
 		Subject: "Science",
 		Topic: "Organ System",
 		Id: 28,
 		Hint: "my presentation",
-		Comment:
-			"It all starts with the raw food you put in your mouth.  Once you put it in your mouth the salivary glands produce saliva and you chew it to help become a bolus and it goes to your esophagus.  The esophagus starts contractions to push the bolus down to the stomach.  Once in the stomach, it starts pounding the bolus in the stomach and add acids to dissolve it ito a chyme.  From the stomach it goes into the small intestine.  The pancreas, liver and gallbladder add more acids to help it dissolve and then it starts getting absorbed. Then in the large intestine finishes processing the food and produces the stool that goes out to the rectum.",
+		Comment: "",
 	},
 	{
 		Word: "Explain how 2 or more organ systems rely on each other to function",
@@ -309,6 +309,7 @@ const buttonHint = document.querySelector(".button-hint");
 const hint = document.querySelector(".hint");
 const next = document.querySelector(".next");
 const details = document.querySelector("details");
+const truth = document.querySelector(".truth");
 
 let randomQuestion = data => {
 	const rand = Math.floor(Math.random() * data.length);
@@ -330,6 +331,8 @@ function checkAnswer(currentQuestion, guess) {
 			? "TRUE"
 			: "FALSE";
 	result.textContent = answer;
+	console.log(answer);
+	answer === "FALSE" ? (truth.textContent = currentQuestion.Word) : "";
 }
 
 function resetPage() {
