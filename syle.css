@@ -73,3 +73,14 @@ footer {
 	margin: 30px;
 	max-width: 10%;
 }
+
+.take-quiz {
+	padding: 2rem;
+}
+
+/* QUIZ PAGE */
+
+.choices {
+	display: flex;
+	justify-content: space-around;
+}

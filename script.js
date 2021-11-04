@@ -62,7 +62,7 @@ const data = [
 	{
 		Word: "Atherosclerosis",
 		Definition:
-			"It is a type of disease that can blood the from flowing in the arteries.  Build up of plaque",
+			"It is a type of disease that can block blood the from flowing in the arteries.  Build up of plaque",
 		Subject: "Science",
 		Topic: "Circulatory System",
 		Id: 31,
