@@ -327,7 +327,7 @@ displayQuestion();
 
 function checkAnswer(currentQuestion, guess) {
 	const answer =
-		currentQuestion.Word.toLowerCase() === guess.toLowerCase()
+		currentQuestion.Word.toLowerCase() === guess.toLowerCase().trim()
 			? "TRUE"
 			: "FALSE";
 	result.textContent = answer;
