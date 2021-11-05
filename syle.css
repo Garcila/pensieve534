@@ -84,3 +84,7 @@ footer {
 	display: flex;
 	justify-content: space-around;
 }
+
+.match-topic {
+	display: flex;
+}

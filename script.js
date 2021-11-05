@@ -232,7 +232,7 @@ const data = [
 	{
 		Word: "Main function of the pancreas",
 		Definition:
-			"Provides acids to the stomach/small intestine to help digest the food",
+			"Provides acids to the stomach/small intestine to help digest the food and regulates blood sugar",
 		Subject: "Science",
 		Topic: "Digestive System",
 		Id: 24,
